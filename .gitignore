@@ -1,0 +1,7 @@
+*log
+*exe
+.idea/
+config.json
+phantomjs-2.1.1-windows/
+.vscode/
+*pyc
