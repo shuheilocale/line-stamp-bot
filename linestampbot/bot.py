@@ -277,9 +277,9 @@ class LineStampBot():
         driver.find_elements_by_css_selector("a.mdBtn")[-1].click()
         time.sleep(3)
 
-    def release(self, driver):
+    def release(self, driver, f=1, t=100):
 
-        page = 1
+        page = f
         base_url = "https://creator.line.me/my/{}/sticker/?page={}"
         cur_sticker_list = self.check_sticker_status(driver, base_url.format(page))
         sticker_list = []
@@ -287,7 +287,7 @@ class LineStampBot():
             sticker_list.extend(cur_sticker_list)
             page += 1
             cur_sticker_list = self.check_sticker_status(driver, base_url.format(page))
-            if page > 25:
+            if page > t:
                 break
 
         # print(sticker_list)

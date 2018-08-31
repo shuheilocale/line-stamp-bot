@@ -22,7 +22,7 @@ def main():
     bot = LineStampBot(config)
 
     driver = create_driver()
-    bot.release(driver)
+    bot.release(driver, f=1, t=50)
 
 
 if __name__ == '__main__':
