@@ -1,0 +1,16 @@
+{
+	"mail":"",
+	"password":"",
+	"info":{
+		"en-title":"",
+		"en-description":"",
+		"jp-title":"",
+		"jp-description":"",
+		"author":""
+		},
+	"zip-dir":"",
+	"name-list":"",
+	"name-table":"",
+	"last-name-list":"",
+	"id":""
+}
